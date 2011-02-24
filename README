@@ -1,0 +1,31 @@
+I have an iPhone.  I am on call which means I want text messages
+through the AT&T text gateway to have a different, startling sound
+to get my attention (or wake me up).  It's annoying, though, that
+AT&T has many outgoing gateways for text messages, so the caller
+ID's are all over the place.  And the only way my iPhone can have
+a custom ringtone is by caller ID.  What do to?
+
+I created contacts that seemed to capture all the caller ID's that
+AT&T messages seem to use.  I couldn't find an authoritative list,
+so I figured out the ID's empirically.  They seem to come from
+1-410-000-000 through 1-410-000-120, at least out here on the west
+coast where I am.
+
+I wrote a little ruby to generate the vCards to cover all those
+ranges.  I then imported those into where my contacts sync from (in
+my case, gmail) and then once they showed up on my iPhone, I assigned
+custom text message sounds.  That last step has to done manually
+fifteen times, don't know a better way to do that, on the iPhone
+at least.
+
+Attached is att-text.vcf, the vCard file that contains the fifteen
+contact entries to cover the range.  I've attached a couple of
+screenshots to this post showing what this looks like when it makes
+it onto your phone.
+
+It's a bit fragile, getting he phone types correct for your contact
+program so they make it to the iPhone correctly.  YMMV on this one.
+I tested the vCard attached through gmail with Google Sync and
+Outlook 2011 for the Mac.
+
+- Sef Kloninger (sefklon@gmail.com)
